@@ -25,7 +25,8 @@ public class Usecase {
 		cart.click();
 		WebElement Viewcart=driver.findElement(By.xpath("//a[@href='https://tutorialsninja.com/demo/index.php?route=checkout/cart']"));
 		Viewcart.click();
-		driver.findElement(By.xpath("//a[@href='https://tutorialsninja.com/demo/index.php?route=checkout/checkout']")).click();
+		WebElement Checkout=driver.findElement(By.xpath("//a[@href='https://tutorialsninja.com/demo/index.php?route=checkout/checkout']"));
+		Checkout.click();
 	}
 
 }
